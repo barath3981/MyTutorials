@@ -1,0 +1,13 @@
+.tabs-edges-clear {
+  margin: -1px;
+}
+
+.nav-tabs > li > a {
+  margin-right: -1px;
+}
+
+.css-content {
+  border: 1px solid;
+  margin: -6px;
+  border-radius: 4px;
+}

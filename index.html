@@ -8,13 +8,73 @@
   <link rel="stylesheet" type="text/css" href="/bootstrap-3.3.7-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="/bootstrap-3.3.7-dist/font-awesome-4.6.3/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="custom_css/override.css">
-  <link rel="stylesheet" href="/bootstrap-3.3.7-dist/css/bootstrap-responsive.css">
   <script src="/jquery/dist/jquery.min.js"></script>
   <script src="/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 
-
 </head>
 <body>
-
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed"
+        data-toggle="collapse" data-target="#navbar"
+        aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Project name</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="col-md-12">
+            <div class="panel with-nav-tabs panel-default">
+              <ul class="nav nav-tabs tabs-edges-clear">
+                  <li class="active"><a href="#htmlcontent" data-toggle="tab">HTML</a></li>
+                  <li><a href="#csscontent" data-toggle="tab">CSS</a></li>
+                  <li><a href="#javascripcontent" data-toggle="tab">Java Script</a></li>
+                  <li><a href="#jquerycontent" data-toggle="tab">Jquery</a></li>
+                  <li><a href="#angularcontent" data-toggle="tab">Angular JS</a></li>
+              </ul>
+              <div class="panel-body">
+                  <div class="tab-content">
+                      <div class="tab-pane fade in active" id="htmlcontent">
+                        <html-content></html-content>
+                      </div>
+                      <div class="tab-pane fade" id="csscontent">
+                        <css-content></css-content>
+                      </div>
+                      <div class="tab-pane fade" id="javascripcontent">
+                        <javascript-content></javascript-content>
+                      </div>
+                      <div class="tab-pane fade" id="jquerycontent">
+                        <jquery-content></jquery-content>
+                      </div>
+                      <div class="tab-pane fade" id="angularcontent">
+                        <angularjs-content></angularjs-content>
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('html-content').load('/coursePages/HTML/htmlContent.html');
+      $('css-content').load('/coursePages/CSS/CSSContent.html');
+      $('javascript-content').load('/coursePages/Javascript/javaScriptContent.html');
+      $('jquery-content').load('/coursePages/Jquery/jqueryContent.html');
+      $('angularjs-content').load('/coursePages/AngularJS/angularJSContent.html');
+    });
+  </script>
 </body>
 </html>
