@@ -8,7 +8,8 @@
   <link rel="stylesheet" type="text/css" href="/bootstrap-3.3.7-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="/bootstrap-3.3.7-dist/font-awesome-4.6.3/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="custom_css/override.css">
-  <script src="/jquery/dist/jquery.min.js"></script>
+  <script data-main="js/main" src="/js/libs/require/require.js"></script>
+  <script src="/js/libs/jquery/dist/jquery.min.js"></script>
   <script src="/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 
 </head>
@@ -69,11 +70,11 @@
   </div>
   <script type="text/javascript">
     $(document).ready(function() {
-      $('html-content').load('/coursePages/HTML/htmlContent.html');
-      $('css-content').load('/coursePages/CSS/CSSContent.html');
-      $('javascript-content').load('/coursePages/Javascript/javaScriptContent.html');
-      $('jquery-content').load('/coursePages/Jquery/jqueryContent.html');
-      $('angularjs-content').load('/coursePages/AngularJS/angularJSContent.html');
+      $('html-content').load('/templates/HTML/htmlContent.html');
+      $('css-content').load('/templates/CSS/CSSContent.html');
+      $('javascript-content').load('/templates/Javascript/javaScriptContent.html');
+      $('jquery-content').load('/templates/Jquery/jqueryContent.html');
+      $('angularjs-content').load('/templates/AngularJS/angularJSContent.html');
     });
   </script>
 </body>
